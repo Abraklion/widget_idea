@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":"kGACAA,QAAQC,IAAI,K","sources":["webpack://gulp-html-scss/./src/js/main.ts"],"sourcesContent":["\r\nconsole.log('ok')\r\n"],"names":["console","log"],"sourceRoot":""}

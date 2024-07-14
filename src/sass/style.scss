@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+
+// Настройка без библиотеки
+
+// Шрифты
+@use "fonts";
+
+// Нормализация css
+@use "normalize";
+
+// Анимации
+//@use 'animations';
+
+// Базовые настройки
+@use "core";
+
+// Служебные класы
+//@use "service";
+
+// Блоки
+//@use "components/comment";
+@use "components/score";
+
+
+

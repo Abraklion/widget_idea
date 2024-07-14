@@ -1,0 +1,295 @@
+<!doctype html>
+
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Заготовка</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="author" content="Abraklion">
+  <meta name="description" content="Описание">
+
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <section class="iCalculator">
+
+    <div class="iCalculator__inner">
+
+      <div class="iCalculator__description">
+        <h1 class="iCalculator__title">Калькулятор оценки идеи</h1>
+
+        <p class="iCalculator__subtitle">Блок заполняется экспертным советом по подразделению</p>
+      </div><!--./iCalculator__description-->
+
+      <div class="iCalculator__row iCalculator__row--header">
+        <div class="iCalculator__col">Влияние</div>
+        <div class="iCalculator__col">Вес</div>
+        <div class="iCalculator__col">Баллы</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="safety">
+        <div class="iCalculator__col iCalculator__col--category">Безопасность</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-safety">1. Угроза здоровью, травматизм</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-safety" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-safety">2. Снижение опасных, вредных факторов (исключение профзаболеваний)</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-safety" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-safety">3. Угроза экологии</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-safety" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col ">20</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="quality">
+        <div class="iCalculator__col iCalculator__col--category">Качество</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-quality">1. Исключение брака. Снижение количества обоснованных претензий связанных с неудолетворенностью заказчика</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-quality" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-quality">2. Повышение надёжности (срок службы, срок эксплуатации, снижение количества ремонтов)</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-quality" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-quality">3. Повышение качества процессов</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-quality" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col">20</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="order">
+        <div class="iCalculator__col iCalculator__col--category">Порядок</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-order">1. Поддержание чистоты оборудания, инструмента, рабочих зон и офисов и комнат отдыха</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-order" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-order">2. Порядок в рабочей зоне</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-order" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-order">3. Улучшение условий и эргономики мест создания ценности</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-order" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col">15</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="process">
+        <div class="iCalculator__col iCalculator__col--category">Производительность процессов</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-process">1. Сокращение времени простоя оборудования в работеи в плановых/аварийных ремонтах, автоматизация процесссов</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-process" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-process">2. Изменение технологических характеристик оборудования, его конструкции</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-process" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-process">3. Оптимизация потоков создания ценностей, повышение скорости процессов</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-process" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col">15</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="labor">
+        <div class="iCalculator__col iCalculator__col--category">Производительность труда</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-labor">1. Снижение трудоёмкости при выполнении операций, технологических, ремонтных и др.</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-labor" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-labor">2. Сокращение перемещений, времени на поиск запчастей, материаллов и инструментов</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-labor" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-labor">3. Снижение ожидания в рабочее время, тиражирования на другие процессы(внедрение на одном, внедрение на других участках)</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-labor" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col">15</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="energy">
+        <div class="iCalculator__col iCalculator__col--category">Энергоэфективность</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-energy">1. Экономия энергоносителей</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-energy" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-energy">2. Экономия инструмента, расходных материалов, основного и вспомогательного материала.</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-energy" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-energy">3. Экономия площадей</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-energy" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col">10</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row" id="other">
+        <div class="iCalculator__col iCalculator__col--category">Другая идея</div>
+
+        <div class="iCalculator__col iCalculator__col--1-span-1">
+          <ul class="iCalculator__subcategory">
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="one-other">1. Повышение лояльности к компании</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="one-other" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="two-other">2. Повышение культуры производства/офиса</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="two-other" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+            <li class="iCalculator__subcategory-item">
+              <label class="iCalculator__subcategory-name" for="three-other">3. Продвижение бренда и т.п.</label>
+              <div class="iCalculator__subcategory-checkbox">
+                <input class="iCalculator__checkbox" id="three-other" type="checkbox">
+              </div>
+            </li><!--./iCalculator__subcategory-item-->
+
+          </ul>
+        </div><!--./iCalculator__col-->
+
+        <div class="iCalculator__col">5</div>
+        <div class="iCalculator__col js-score">0</div>
+      </div><!--./iCalculator__row-->
+
+      <div class="iCalculator__row iCalculator__row--footer">
+        <div class="iCalculator__col">
+          <b>Влияние идеи:</b>
+          отсутствует - <img class="iCalculator__img" src="assets/img/zero.jpg" width="12" alt="0">
+          небольшое - <img class="iCalculator__img" src="assets/img/one.jpg" width="12" alt="1">
+          среднее - <img class="iCalculator__img" src="assets/img/two.jpg" width="12" alt="3">
+          значительное - <img class="iCalculator__img" src="assets/img/three.jpg" width="12" alt="7">
+        </div>
+        <div class="iCalculator__col">Сумма баллов: </div>
+        <div class="iCalculator__col js-sum-points">0</div>
+      </div><!--./iCalculator__row-->
+
+    </div><!--./iCalculator__inner-->
+
+  </section><!--./iCalculator-->
+
+</body>
+
+</html>
