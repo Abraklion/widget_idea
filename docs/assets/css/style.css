@@ -438,6 +438,8 @@ img {
 }
 
 .iCalculator {
+    -webkit-user-select: none;
+    user-select: none;
     margin-top: 15px;
     margin-left: 15px;
     margin-bottom: 15px;
@@ -576,6 +578,7 @@ img {
     flex: 1 1 auto;
     font-size: 14px;
     padding: 0 10px 0 10px;
+    cursor: pointer;
 }
 
 .iCalculator__subcategory-checkbox {
@@ -584,6 +587,10 @@ img {
     align-items: center;
     justify-content: center;
     border-left: 1px solid #ededed;
+}
+
+.iCalculator__checkbox {
+    cursor: pointer;
 }
 
 .iCalculator__img {

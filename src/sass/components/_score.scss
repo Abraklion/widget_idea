@@ -1,5 +1,7 @@
 
 .iCalculator {
+  user-select: none;
+
   margin-top: 15px;
   margin-left: 15px;
   margin-bottom: 15px;
@@ -174,6 +176,8 @@
   font-size: 14px;
 
   padding: 0 10px 0 10px;
+
+  cursor: pointer;
 }
 
 .iCalculator__subcategory-checkbox {
@@ -187,7 +191,7 @@
 }
 
 .iCalculator__checkbox {
-
+  cursor: pointer;
 }
 
 .iCalculator__img {
